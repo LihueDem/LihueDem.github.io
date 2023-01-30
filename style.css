@@ -1,0 +1,104 @@
+body{
+    background: #FFFCF6;
+    color: #000000;
+}
+
+.col-left{
+    margin-left: 100px;
+}
+
+.section-titulo{
+    margin-top: 30px;
+}
+
+.section-titulo-ul{
+    font-size: 60px;
+    font-family: 'Koulen', cursive;
+    display: inline-block;
+    list-style: none;
+    line-height: 61px;
+    margin-top: 30px;
+}
+
+.section-titulo-ul-li-nombre{
+    color: #3041DB;
+    margin-top: 15px;
+}
+
+.section-titulo-ul-li-programador{
+    color: #3041DB;
+    font-size: 27px;
+    letter-spacing: 2.5px;
+}
+
+.foto-perfil{
+    height: 225px;
+    width: 220px;
+    border-radius: 850px;
+    float: right;
+}
+
+
+.section-work{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.clase-titulos{
+    margin-top: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.clase-titulos-h3{
+    color: #3041DB;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+h5{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+h6{
+    margin-top: 10px;
+}
+
+.texto-work-p{
+    margin-top: 10px;
+}
+
+.texto-work-ul li{
+    list-style: none;    
+}
+
+.btn-js{
+    margin-left: 100px;
+    padding-left: 100px;
+}
+
+.btn{
+    border-radius: 4px;
+    /*background: #3041E0;*/
+    background: #000000;
+    border: #3041DB 0.5px solid;
+    font-family: 'Koulen', cursive;
+    color: #FFFCF6;
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    opacity: 0.9;
+}
+
+.btn:hover{
+    background: #FFFCF6;
+    /*background: #fbfbfb;*/
+    border-color: #3041DB;
+    color: #FB5905;
+}
+/* Colores 
+000000 Negro
+3041DB Violeta
+FFFCF6 Blanco
+*/
