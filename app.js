@@ -1,6 +1,9 @@
+
 let modo = document.getElementById('modo');
 let english = document.getElementById('english');
 let copiar = document.getElementById('copiar');
+let descargar = document.getElementById('descargar');
+
 
 modo.addEventListener('click',function(){
    console.log('si funciona aqui estoy');
@@ -8,7 +11,12 @@ modo.addEventListener('click',function(){
     document.body.style.color = '#f2f2f2'; 
 });
 
+//how create pdf with javascript?
+
 english.addEventListener('click',function(){
+    modo.innerHTML = 'Change mode';
+    descargar.innerHTML = 'Download';
+
     document.getElementById('sobreMi').innerHTML = 'about me';
     
     document.getElementById('sobreMi-text').innerHTML = 'I am an advanced student in Programming, currently finishing my last year of studies  at the Technological University of Tucuman.<br><br> I am 28 years old and I live in San Miguel de Tucumán, Argentina.I am interested in deepening my knowledge and acquiring professional experience in the IT world, specifically in an agile development environment.<br><br> I am passionate about web programming and I have skills needed for the front-end development of applications.<br><br> In addition to my technical skills, acquired during the last years of study, I have soft skills that facilitate any learning process. Although I dont have much experience in IT projects yet, my expectations to learn, and solidify my knowledge by learning from experts are huge.<br><br> I am a proactive, independent, and responsible professional that really enjoy teamworking';
@@ -28,4 +36,27 @@ english.addEventListener('click',function(){
     document.getElementById('idiomas').innerHTML = 'languages';
     document.getElementById('idiomas-esp').innerHTML = '-Spanish: First language';
     document.getElementById('idiomas-eng').innerHTML = '-English: intermediate level';
+
+    english.addEventListener('click',()=>{
+        alert('funciona');
+
+
+    })
 })
+
+descargar.addEventListener('click',function (data, name = "myData.doc"){
+    const blob = new Blob([data],{ type: "octet.steam"});
+    const href = URL.createObjectURL(blob);
+
+    const a = Object.assign(document.createElement("a"), {
+        href,
+        style: "display:none",
+        download: "myData.doc",
+    });
+
+    document.body.appendChild(a);
+
+    a.click();
+    URL.revokeObjectURL(href);
+    a.remove();
+});
