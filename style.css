@@ -5,6 +5,7 @@ body{
 
 .col-left{
     margin-left: 100px;
+    margin-bottom: 60px;
 }
 
 .section-titulo{
@@ -51,7 +52,7 @@ body{
 
 .clase-titulos-h3{
     color: #3041DB;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -97,3 +98,28 @@ h6{
 3041DB Violeta
 FFFCF6 Blanco
 */
+.seccion-habilidades-img{
+    height: 500px;
+    width: 100%;
+    background: #3041DB;
+}
+
+.habilidades-titulo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.habilidades-titulo-h3{
+    color: #FFFCF6;
+}
+
+.habilidades-ul-li{
+    display: inline-block;
+}
+
+.habilidades-ul-li-img{
+    height: 150px;
+    width: 150px;
+    margin:7px;
+    border-radius: 10px;
+}

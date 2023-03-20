@@ -2,7 +2,7 @@
 let modo = document.getElementById('modo');
 let english = document.getElementById('english');
 let copiar = document.getElementById('copiar');
-let descargar = document.getElementById('descargar');
+
 
 
 modo.addEventListener('click',function(){
@@ -10,8 +10,6 @@ modo.addEventListener('click',function(){
     document.body.style.backgroundColor = '#000000';
     document.body.style.color = '#f2f2f2'; 
 });
-
-//how create pdf with javascript?
 
 english.addEventListener('click',function(){
     modo.innerHTML = 'Change mode';
@@ -36,27 +34,7 @@ english.addEventListener('click',function(){
     document.getElementById('idiomas').innerHTML = 'languages';
     document.getElementById('idiomas-esp').innerHTML = '-Spanish: First language';
     document.getElementById('idiomas-eng').innerHTML = '-English: intermediate level';
-
-    english.addEventListener('click',()=>{
-        alert('funciona');
-
-
-    })
 })
 
-descargar.addEventListener('click',function (data, name = "myData.doc"){
-    const blob = new Blob([data],{ type: "octet.steam"});
-    const href = URL.createObjectURL(blob);
 
-    const a = Object.assign(document.createElement("a"), {
-        href,
-        style: "display:none",
-        download: "myData.doc",
-    });
 
-    document.body.appendChild(a);
-
-    a.click();
-    URL.revokeObjectURL(href);
-    a.remove();
-});
