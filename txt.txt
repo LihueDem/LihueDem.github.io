@@ -1,0 +1,22 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+
+let descargar = document.getElementById('descargar');
+  
+  descargar.addEventListener('click',function (data, name = "myData.pdf"){
+      const blob = new Blob([data],{ type: "octet.steam"});
+      const href = URL.createObjectURL(blob);
+
+      const a = Object.assign(document.createElement("a"), {
+          href,
+          style: "display:none",
+          download: "myData.pdf",
+      });
+
+      document.body.appendChild(a);
+
+      a.click();
+      URL.revokeObjectURL(href);
+      a.remove();
+ });
