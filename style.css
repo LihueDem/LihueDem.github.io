@@ -4,9 +4,6 @@ body{
     font-size: 22px;
 }
 
-.col-left{
-    margin: 0 0 60px 100px;
-}
 
 .section-titulo{
     margin-top: 30px;
@@ -68,7 +65,7 @@ h6{
 }
 
 .texto-work-p{
-    margin-top: 10px;
+    margin-left: 30px;
 }
 
 .texto-work-ul-li{
