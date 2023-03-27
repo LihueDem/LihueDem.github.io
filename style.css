@@ -4,7 +4,6 @@ body{
     font-size: 22px;
 }
 
-
 .section-titulo{
     margin-top: 30px;
 }
@@ -36,7 +35,6 @@ body{
     float: right;
 }
 
-
 .section-work{
     margin-top: 20px;
     padding-top: 20px;
@@ -54,18 +52,17 @@ body{
     font-weight: bold;
 }
 
-
 h5{
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 18px;
 }
 
 h6{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .texto-work-p{
-    margin-left: 30px;
+    margin: 30px 0;
 }
 
 .texto-work-ul-li{
@@ -103,14 +100,10 @@ FFFCF6 Blanco
     color: #FFFCF6;
 }
 
-
-
 .seccion-habilidades-img{
     height: 500px;
     background: #3041DB;
 }
-
-
 
 .titulo-naranja{
     color: #FB5905;
