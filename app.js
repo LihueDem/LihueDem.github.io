@@ -1,9 +1,15 @@
-
+let scroll = document.getElementById("scroll");
+let pruebaScroll = document.getElementById("pruebaScroll");
 let modo = document.getElementById('modo');
 let english = document.getElementById('english');
 let copiar = document.getElementById('copiar');
 
 
+function myScroll(){
+    document.getElementById("scroll").scrollIntoView("pruebaScroll");
+}
+
+scroll.addEventListener('click',myScroll());
 
 modo.addEventListener('click',function(){
    console.log('si funciona aqui estoy');
